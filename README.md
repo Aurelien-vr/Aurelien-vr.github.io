@@ -1,2 +1,2 @@
 # Portfolio
- [portfolio d'Aurélien Vincent--Randonnier](https://aurios6.github.io)
+ [Portfolio](https://aurios6.github.io)
