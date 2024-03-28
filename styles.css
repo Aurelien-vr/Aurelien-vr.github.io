@@ -6,24 +6,37 @@
 html,
 body {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     font-family: AKIRA;
 }
 
 body {
-    background:linear-gradient(#101022ee,#12122bee, #1b1b49ee, #212163ee), url('noise.svg');
-    background-size: 100%, 100%;
-    background-repeat: no-repeat;
+    background:linear-gradient(to bottom right, #080811df 30%,#0c0c1fdf 60%, #141436df 90%, #121231df 100%), url('noise.svg');
+    background-repeat:repeat;
 }
 
-#nom{
-    color: aliceblue;
+.mainContentP1{
+    font-size: x-large;
+    color: #656BCA;
+    text-align: center;
+    height: calc(100vh - 40px); /* Adjust height to subtract the height of the social bar and navbar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContentP1 h1 {
+    margin: 0; /* Remove default margin */
 }
 
 .navbar{
+    position: fixed;
     overflow: hidden;
-    float: right;
+    top: 20px;
+    right: 0% ;
     margin-right: 20px;
 }
 
@@ -41,6 +54,7 @@ body {
 }
 
 .socialBar{
+    position: fixed;
     float: left;
     display: flex;
     align-items: center;
@@ -48,14 +62,13 @@ body {
 }
 
 .column{
-    position: absolute;
     display: flex;
     flex-direction: column;
     margin: 30px;
     gap: 30px;
 }
 .column a{
-    color: white;
+    color: #656BCA;
     font-size: 35px;
 }
 
