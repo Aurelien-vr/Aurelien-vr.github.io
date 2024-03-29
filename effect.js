@@ -1,15 +1,20 @@
-let socialBar = document.querySelector('.socialBar');
+const page1 = document.querySelector(".page1");
+const navBar = document.querySelector("navbar");
 
-let observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    console.log(entry.isIntersecting);
+const objOptions = {
+    root: null,
+    threshold: 0.3,
+    rootMargin: "-100px",
+};
+
+const sectionObserver = new IntersectionObserver(callBackFunction, objOptions);
+sectionObserver.observe(page1);
+
+function callBackFunction(entries) {
+    const [entry] = entries;
     if (entry.isIntersecting) {
-      socialBar.classList.add('visible');
+        navBar.classList.remove("hidden");
     } else {
-      socialBar.classList.remove('visible');
-      socialBar.style.opacity = 0;
-      socialBar.style.left = '20%';
+        navBar.classList.add("hidden");
     }
-});
-});
-observer.observe(socialBar, { threshold: 0.5 });
+}
