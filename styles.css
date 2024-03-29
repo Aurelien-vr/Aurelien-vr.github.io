@@ -5,6 +5,7 @@
 
 html,
 body {
+    scroll-behavior: smooth;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -13,23 +14,24 @@ body {
 }
 
 body {
-    background:linear-gradient(to bottom right, #080811df 30%,#0c0c1fdf 60%, #141436df 90%, #121231df 100%), url('noise.svg');
+    background-image:
+    linear-gradient(to bottom right, #080811df 30%,#0c0c1fdf 60%, #141436df 90%, #121231df 100%),
+    url('noise.svg');
     background-repeat:repeat;
 }
 
 .mainContentP1{
+    height: 100%;
     font-size: x-large;
     color: #656BCA;
     text-align: center;
-    height: calc(100vh - 40px); /* Adjust height to subtract the height of the social bar and navbar */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-.mainContentP1 h1 {
-    margin: 0; /* Remove default margin */
+.mainContentP1 > h1 > span{
+    color: #c96010;
 }
 
 .navbar{
@@ -54,14 +56,22 @@ body {
 }
 
 .socialBar{
-    position: fixed;
+    position: absolute;
     float: left;
     display: flex;
     align-items: center;
     height: 100%;
+    opacity: 0;
+    left: 20%;
+    transition: all 1s ease-in-out;
+}
+.socialBar.visible{
+    opacity: 1;
+    left: 0%;
 }
 
 .column{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 30px;
@@ -71,4 +81,32 @@ body {
     color: #656BCA;
     font-size: 35px;
 }
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    height: 1000px;
+    width: 1200px;
+    z-index: -1;
+    left: calc(50% - 600px);
+}
+
+.circle.red {
+    background-image:linear-gradient(to top ,#c96010dd 0%,#e87e2cdd 50%) ,url('noiseCircle.svg');
+    transform: translateY(-80%);
+}
+.circle.blue {
+    background-image:linear-gradient(to bottom ,#c96010dd 0%,#e87e2cdd 50%) ,url('noiseCircle.svg');
+    bottom: 0%;
+    transform: translateY(80%);
+    background-color: #c96010;
+}
+
+.about{
+    width: 100%;  /* Adjust the width as needed */
+    height: 100%;  /* Adjust the height as needed */
+    background-color: #141436;  /* Change the background color */
+}
+
+
 
