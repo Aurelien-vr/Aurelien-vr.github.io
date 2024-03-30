@@ -9,17 +9,25 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <section class="page p1">
+    <header>
         <nav class="navbar">
-            <a href="#TopPage">Home</a>
+            <a href="#Home">Home</a>
             <a href="#About"> About</a>
-            <a href="Portfolio">Portfolio</a>
+            <a href="#Portfolio">Portfolio</a>
             <a href="Contact">Contact</a>
         </nav>
+    </header>
+    
+    <section class="page p1" id="Home">
         
         <div class="circles">
-            <div class="circle blue"></div>
-            <div class="circle red" id="TopPage"></div>
+            <div class="circle topCircle"></div>
+            <div class="circle botCircle"></div>
+        </div>
+
+        <div class="lightCircles">
+            <div id="redCircle"></div>
+            <div id="blueCircle"></div>
         </div>
         
         <div class="socialBar">
@@ -40,8 +48,12 @@
         </div>
     </section>
 
-    <section class="page p2">
-        <div class = "about" id="About"></div>
+    <section class="page p2" id="About">
+        <div class = "divp2"></div>
+    </section>
+
+    <section class="page p3" id="Portfolio">
+        <h5>Hello page 2</h5>
     </section>
 
 </body>

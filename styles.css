@@ -3,6 +3,10 @@
     src: url(../Font/Akira.otf);
 }
 
+header{
+    margin: 0;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -13,11 +17,10 @@ body{
     margin: 0;
 }
 
-.page{
+section{
     display: flex;
     justify-content: center;
     align-content: center;
-    overflow: hidden    ;
     height: 100vh;
 }
 
@@ -27,9 +30,6 @@ body{
     url('noise.svg');
 }
 
-.p2{
-    background-color: #141436;
-}
 
 .mainContentP1{
     display: flex;
@@ -48,7 +48,6 @@ body{
 .navbar{
     z-index: 10;
     position: fixed;
-    overflow: hidden;
     top: 20px;
     right: 0% ;
     margin-right: 20px;
@@ -75,12 +74,12 @@ body{
     height: 100%;
     left: 0%;
     opacity: 1;
-    transition: all 1.5s ease-in;
+    transition: all 0.8s ease-in;
 }
 
 .hidden{
     opacity: 0;
-    transform: translateX(20%);
+    transform: translateX(-100%);
 }
 
 .column{
@@ -103,22 +102,28 @@ body{
     left: calc(50% - 600px);
 }
 
-.circle.red {
+.circle.topCircle {
     background-image:linear-gradient(to top ,#c96010dd 0%,#e87e2cdd 50%) ,url('noiseCircle.svg');
     transform: translateY(-80%);
 }
-.circle.blue {
+.circle.botCircle {
     background-image:linear-gradient(to bottom ,#c96010dd 0%,#e87e2cdd 50%) ,url('noiseCircle.svg');
     bottom: 0%;
     transform: translateY(80%);
     background-color: #c96010;
+    clip-path: polygon(0% 0%,100% 0%,100% 20%,0% 20%); /*Do not diplay the bottom of the lower circle*/
 }
 
-.about{
-    width: 100%;  /* Adjust the width as needed */
-    height: 100%;  /* Adjust the height as needed */
-    background-color: #141436;  /* Change the background color */
+.lightCircles{
+    position: absolute;
+    border-radius: 50%;
 }
 
 
+.p2{
+    background-color: #141436;
+}
 
+.p3{
+    background-color: #23239f;
+}

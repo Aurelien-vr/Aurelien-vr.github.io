@@ -1,20 +1,20 @@
-const page1 = document.querySelector(".page1");
-const navBar = document.querySelector("navbar");
+const page = document.getElementById("Home");
+const socialBar = document.querySelector(".socialBar");
 
 const objOptions = {
     root: null,
-    threshold: 0.3,
+    threshold: 0.4,
     rootMargin: "-100px",
 };
 
 const sectionObserver = new IntersectionObserver(callBackFunction, objOptions);
-sectionObserver.observe(page1);
+sectionObserver.observe(page);
 
 function callBackFunction(entries) {
     const [entry] = entries;
     if (entry.isIntersecting) {
-        navBar.classList.remove("hidden");
+        socialBar.classList.remove("hidden");
     } else {
-        navBar.classList.add("hidden");
+        socialBar.classList.add("hidden");
     }
 }
