@@ -39,6 +39,7 @@ section{
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    z-index: 5;
 }
 
 .mainContentP1 > h1 > span{
@@ -71,10 +72,11 @@ section{
     float: left;
     display: flex;
     align-items: center;
+    z-index: 5;
     height: 100%;
     left: 0%;
     opacity: 1;
-    transition: all 0.8s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .hidden{
@@ -107,11 +109,10 @@ section{
     transform: translateY(-80%);
 }
 .circle.botCircle {
-    background-image:linear-gradient(to bottom ,#c96010dd 0%,#e87e2cdd 50%) ,url('noiseCircle.svg');
+    background-image:linear-gradient(to bottom ,#c96010dd 0%,#e87e2cdd 100%),url('noiseCircle.svg');
     bottom: 0%;
     transform: translateY(80%);
     background-color: #c96010;
-    clip-path: polygon(0% 0%,100% 0%,100% 20%,0% 20%); /*Do not diplay the bottom of the lower circle*/
 }
 
 .lightCircles{
@@ -120,10 +121,74 @@ section{
 }
 
 
+
+.lightCircles.page1{
+    top: 0%;
+    left: 0%;
+    height: 300px;
+    width: 300px;
+    z-index: 4;
+    filter: blur(1px);
+    
+}
+
+.lightCircles.page1.redCircle{
+    background-image: linear-gradient(32deg, #e16655 0%, #e3622b 80%);
+    box-shadow: 0px 0px 22px #da5b3b, 
+    0px 0px 80px #e56858;
+    transform: translate(10vw,15vh);
+}
+
+
+
+.lightCircles.page1.blueCircle{
+    background-image:linear-gradient(90deg, #3d3de8a2, #7979d8a2);
+    box-shadow: 0px 0px 35px #2c2ce5a2,
+    0px 0px 80px #4848e4a2;
+    transform: translate(75vw, 60vh);
+}
+
+
+
+
 .p2{
-    background-color: #141436;
+    background-color: #1a1a22;
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.199);
+    backdrop-filter: blur( 4px );
+}
+
+.lightCircles.page2{
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+
+.listGlassPanel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.GlassPanel::marker{
+    content: "";
+}
+
+.GlassPanel{
+    margin: 60px;
+    height: 400px;
+    width: 300px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.199);
+    backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .p3{
     background-color: #23239f;
 }
+
+
+
