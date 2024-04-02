@@ -28,14 +28,15 @@ section{
     background-image:
     linear-gradient(to bottom right, #080811df 30%,#0c0c1fdf 60%, #141436df 90%, #121231df 100%),
     url('noise.svg');
+    background-repeat: repeat;
 }
 
 
 .mainContentP1{
     display: flex;
     height: 100%;
-    font-size: x-large;
-    color: #656BCA;
+    font-size: 32px;
+    color: #4f57cf;
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +44,7 @@ section{
 }
 
 .mainContentP1 > h1 > span{
-    color: #c96010;
+    color: #da5b3b;
 }
 
 .navbar{
@@ -96,7 +97,10 @@ section{
     font-size: 35px;
 }
 
+
+/*
 .circle {
+filter: blur(25px);
     position: absolute;
     border-radius: 50%;
     height: 1000px;
@@ -114,6 +118,7 @@ section{
     transform: translateY(80%);
     background-color: #c96010;
 }
+*/
 
 .lightCircles{
     position: absolute;
@@ -187,7 +192,7 @@ section{
 }
 
 .p3{
-    background-color: #23239f;
+    background-color: #26263b;
 }
 
 
