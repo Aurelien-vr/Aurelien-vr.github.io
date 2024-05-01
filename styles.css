@@ -3,7 +3,7 @@
     src: url(../Font/Akira.otf);
 }
 
-header{
+header {
     margin: 0;
 }
 
@@ -13,26 +13,26 @@ body {
     font-family: AKIRA;
 }
 
-body{
+body {
     margin: 0;
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
     align-content: center;
     height: 100vh;
 }
 
-.p1{
+.p1 {
     background-image:
-    linear-gradient(to bottom right, #080811df 30%,#0c0c1fdf 60%, #141436df 90%, #121231df 100%),
-    url('noise.svg');
+        linear-gradient(to bottom right, #080811df 30%, #0c0c1fdf 60%, #141436df 90%, #121231df 100%),
+        url('noise.svg');
     background-repeat: repeat;
 }
 
 
-.mainContentP1{
+.mainContentP1 {
     display: flex;
     height: 100%;
     font-size: 32px;
@@ -43,32 +43,32 @@ section{
     z-index: 5;
 }
 
-.mainContentP1 > h1 > span{
+.mainContentP1>h1>span {
     color: #da5b3b;
 }
 
-.navbar{
+.navbar {
     z-index: 10;
     position: fixed;
     top: 20px;
-    right: 0% ;
+    right: 0%;
     margin-right: 20px;
 }
 
-.navbar a{
-    float:left;
-    display:block;
+.navbar a {
+    float: left;
+    display: block;
     color: #656BCA;
     text-align: center;
     padding: 20px 40px;
     text-decoration: none;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: rgb(155, 157, 222);
 }
 
-.socialBar{
+.socialBar {
     position: absolute;
     float: left;
     display: flex;
@@ -80,89 +80,67 @@ section{
     transition: all 0.5s ease-in;
 }
 
-.hidden{
+.hidden {
     opacity: 0;
     transform: translateX(-100%);
 }
 
-.column{
+.column {
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 30px;
     gap: 30px;
 }
-.column a{
+
+.column a {
     color: #656BCA;
     font-size: 35px;
 }
 
-
-/*
-.circle {
-filter: blur(25px);
-    position: absolute;
-    border-radius: 50%;
-    height: 1000px;
-    width: 1200px;
-    left: calc(50% - 600px);
-}
-
-.circle.topCircle {
-    background-image:linear-gradient(to top ,#c96010dd 0%,#e87e2cdd 50%) ,url('noiseCircle.svg');
-    transform: translateY(-80%);
-}
-.circle.botCircle {
-    background-image:linear-gradient(to bottom ,#c96010dd 0%,#e87e2cdd 100%),url('noiseCircle.svg');
-    bottom: 0%;
-    transform: translateY(80%);
-    background-color: #c96010;
-}
-*/
-
-.lightCircles{
+.lightCircles {
     position: absolute;
     border-radius: 50%;
 }
 
 
 
-.lightCircles.page1{
+.lightCircles.page1 {
     top: 0%;
     left: 0%;
     height: 300px;
     width: 300px;
     z-index: 4;
     filter: blur(1px);
-    
+
 }
 
-.lightCircles.page1.redCircle{
+.lightCircles.page1.redCircle {
     background-image: linear-gradient(32deg, #e16655 0%, #e3622b 80%);
-    box-shadow: 0px 0px 22px #da5b3b, 
-    0px 0px 80px #e56858;
-    transform: translate(10vw,15vh);
+    box-shadow: 0px 0px 22px #da5b3b,
+        0px 0px 80px #e56858;
+    transform: translate(10vw, 15vh);
 }
 
 
 
-.lightCircles.page1.blueCircle{
-    background-image:linear-gradient(90deg, #3d3de8a2, #7979d8a2);
+.lightCircles.page1.blueCircle {
+    background-image: linear-gradient(90deg, #3d3de8a2, #7979d8a2);
     box-shadow: 0px 0px 35px #2c2ce5a2,
-    0px 0px 80px #4848e4a2;
+        0px 0px 80px #4848e4a2;
     transform: translate(75vw, 60vh);
 }
 
 
 
 
-.p2{
+.p2 {
     background-color: #1a1a22;
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.199);
-    backdrop-filter: blur( 4px );
+    backdrop-filter: blur(4px);
 }
 
-.lightCircles.page2{
+.lightCircles.page2 {
     align-self: center;
     height: 100px;
     width: 100px;
@@ -170,30 +148,27 @@ filter: blur(25px);
 }
 
 
-.listGlassPanel{
+.listGlassPanel {
     display: flex;
     flex-direction: row;
-    align-items: center;    
+    align-items: center;
 }
 
-.GlassPanel::marker{
+.GlassPanel::marker {
     content: "";
 }
 
-.GlassPanel{
+.GlassPanel {
     margin: 60px;
     height: 400px;
     width: 300px;
-    background: rgba( 255, 255, 255, 0.1 );
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.199);
-    backdrop-filter: blur( 4px );
+    backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.p3{
+.p3 {
     background-color: #26263b;
 }
-
-
-
