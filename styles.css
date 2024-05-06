@@ -15,7 +15,8 @@ body {
 
 body {
     margin: 0;
-    background-color: #020b17 ;
+    background-image: linear-gradient(to bottom, #202a3c 0%, #051121 10%, #141a2c 100%), url("noise.svg");
+    
 }
 
 section {
@@ -36,14 +37,14 @@ section {
 .navbar a {
     float: left;
     display: block;
-    color: #FFE8CE;
+    color: #b2a287;
     text-align: center;
     padding: 20px 40px;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #b3b0ae;
+    color: #c8c0b1;
 }
 
 .socialBar {
@@ -72,7 +73,27 @@ section {
 }
 
 .column a {
-    color: #FFE8CE;
+    color: #b2a287;
     font-size: 35px;
+}
+
+.coffeeCup{
+    user-select: none;
+    position: relative;
+    left: 28%;
+    bottom: -16%;
+    scale: 60%;
+    animation: wave 3s ease-in-out infinite alternate;
+}
+
+
+
+    
+
+  
+@keyframes wave {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
 
