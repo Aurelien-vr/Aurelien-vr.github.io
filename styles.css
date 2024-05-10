@@ -16,7 +16,10 @@ body {
 body {
     margin: 0;
     background-image: linear-gradient(to bottom, #202a3c 0%, #051121 10%, #141a2c 100%), url("noise.svg");
-    
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 section {
