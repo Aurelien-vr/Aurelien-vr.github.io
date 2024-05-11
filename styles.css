@@ -15,7 +15,8 @@ body {
 
 body {
     margin: 0;
-    background-image: linear-gradient(to bottom, #202a3c 0%, #051121 10%, #141a2c 100%), url("noise.svg");
+    background-image: linear-gradient(to bottom, #151F2A 0%, #181820 10%, #1D1B1F 100%), url("noise.svg");
+    background-repeat: repeat-y;
 }
 
 body::-webkit-scrollbar {
@@ -80,23 +81,52 @@ section {
     font-size: 35px;
 }
 
-.coffeeCup{
+.coffeeCup {
+    user-select: none;
+    position: fixed;
+    left: 41%;
+    bottom: -47%;
+    scale: 35%;
+    animation: wave 4s ease-in-out infinite alternate;
+}
+
+.smokeStock {
     user-select: none;
     position: relative;
-    left: 28%;
-    bottom: -16%;
-    scale: 60%;
-    animation: wave 3s ease-in-out infinite alternate;
+    left: 10%;
+    bottom: 33%;
+    scale: 32%;
+    animation: wave_smoke 8s ease-in-out infinite alternate;
 }
 
-
-
-    
-
-  
 @keyframes wave {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
+@keyframes wave_smoke {
+    0% {
+        transform: scale(-1, 1) translate(0px, 0px);
+    }
+
+    33% {
+        transform: scale(-1, 1) translate(-3px, 3px);
+    }
+
+    66% {
+        transform: scale(-1, 1) translate(-5px, 8px);
+    }
+
+    100% {
+        transform: scale(-1, 1) translate(0px, 0px);
+    }
+}
