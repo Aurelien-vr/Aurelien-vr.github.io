@@ -81,6 +81,14 @@ section {
     font-size: 35px;
 }
 
+.mainTitle {
+    position: absolute;
+    text-align: left;
+    font-size: 250%;
+    left: 15vw;
+    top: 30vh;
+}
+
 .coffeeCup {
     user-select: none;
     position: fixed;
@@ -92,10 +100,10 @@ section {
 
 .smokeStock {
     user-select: none;
-    position: relative;
-    left: 12%;
-    bottom: 26%;
-    scale: 32%;
+    position: absolute;
+    scale: 10%;
+    bottom: -100%;
+    right: -52%;
     animation: wave_smoke 8s ease-in-out infinite alternate;
 }
 
@@ -115,18 +123,22 @@ section {
 
 @keyframes wave_smoke {
     0% {
+        filter: opacity(50%) blur(2px);
         transform: scale(-1, 1) translate(0px, 0px);
     }
 
     33% {
+        filter: opacity(30%) blur(2px);
         transform: scale(-1, 1) translate(-5px, -3px);
     }
 
     66% {
+        filter: opacity(40%) blur(2px);
         transform: scale(-1, 1) translate(-9px, 8px);
     }
 
     100% {
+        filter: opacity(50%) blur(2px);
         transform: scale(-1, 1) translate(0px, 0px);
     }
 }
