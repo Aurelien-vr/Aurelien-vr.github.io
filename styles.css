@@ -95,7 +95,7 @@ section {
     left: 45%;
     bottom: -47%;
     scale: 35%;
-    animation: wave 4s ease-in-out infinite alternate;
+    animation: wave 6s ease-in-out infinite alternate;
 }
 
 .smokeStock {
@@ -113,7 +113,7 @@ section {
     }
 
     50% {
-        transform: translateY(-6px);
+        transform: translateY(-4px);
     }
 
     100% {
@@ -123,22 +123,22 @@ section {
 
 @keyframes wave_smoke {
     0% {
-        filter: opacity(50%) blur(2px);
+        filter: opacity(50%);
         transform: scale(-1, 1) translate(0px, 0px);
     }
 
     33% {
-        filter: opacity(30%) blur(2px);
-        transform: scale(-1, 1) translate(-5px, -3px);
+        filter: opacity(30%);
+        transform: scale(-1, 1) translate(-10px, -3px);
     }
 
     66% {
-        filter: opacity(40%) blur(2px);
-        transform: scale(-1, 1) translate(-9px, 8px);
+        filter: opacity(40%);
+        transform: scale(-1, 1) translate(-9px, 11px);
     }
 
     100% {
-        filter: opacity(50%) blur(2px);
+        filter: opacity(50%);
         transform: scale(-1, 1) translate(0px, 0px);
     }
 }
