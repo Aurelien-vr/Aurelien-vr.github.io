@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Akira";
+    src: url("../Font/Akira.otf") format("opentype");
+}
+
+body{
+    font-family: "Akira", sans-serif;
+    background-color: #090a17;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+}
+
+h1{
+    color: #cf9c1b;
+}
+
+p{
+    color: whitesmoke;
+}
+
