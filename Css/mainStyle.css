@@ -1,23 +1,26 @@
 @font-face {
-    font-family: "Akira";
-    src: url("../Font/Akira.otf") format("opentype");
+  font-family: "Quiking";
+  src: url("../Font/Quicking.otf");
 }
 
-body{
-    font-family: "Akira", sans-serif;
-    background-color: #090a17;
+
+body {
+  font-family: "Quiking";
+  background-image: url("../Ressources/bg_portfolio.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
 }
 
-section{
-    height: 100vh;
-    display: flex;
+h1 {
+  color: whitesmoke;
+  font-size: 112px;
+  align-content: bottom;
 }
 
-h1{
-    color: #cf9c1b;
+p {
+  color: whitesmoke;
 }
-
-p{
-    color: whitesmoke;
-}
-
