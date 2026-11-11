@@ -1,12 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Private page</title>
     <link rel="stylesheet" href="Css/mainStyle.css">
-</head>
-<body>
-  <h1>Aurélien<br>Vincent--Randonnier</h1>
-</body>
+  </head>
+  <body>
+    <main class="card">
+      <form id="login-form">
+        <h1>Private page</h1>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required autofocus>
+        <button type="submit">Unlock</button>
+        <p id="login-error" class="error" role="alert" hidden>Incorrect password.</p>
+      </form>
+
+      <section id="private-content" hidden></section>
+    </main>
+    <script src="content.enc.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
