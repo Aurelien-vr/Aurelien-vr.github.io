@@ -1,25 +1,87 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Private page</title>
+    <meta name="description" content="Portrait culturel et fiche du module de communication interculturelle.">
+    <title>Communication interculturelle — carte de connaissances</title>
     <link rel="stylesheet" href="Css/mainStyle.css">
   </head>
   <body>
-    <main class="card">
-      <form id="login-form">
-        <h1>Private page</h1>
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password" autocomplete="current-password" required autofocus>
-        <button type="submit">Unlock</button>
-        <p id="login-error" class="error" role="alert" hidden>Incorrect password.</p>
-      </form>
+    <main class="site-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Portfolio réflexif · 2026–2027</p>
+          <h1>Communication<br><em>interculturelle</em></h1>
+          <p class="intro">Une carte pour relier mon identité culturelle aux notions et compétences du module.</p>
+        </div>
+        <div class="hero-meta" aria-label="Informations principales">
+          <span>10 points</span>
+          <span>ECTS</span>
+          <span>EDD UNESCO</span>
+        </div>
+      </header>
 
-      <section id="private-content" hidden></section>
+      <section class="workspace" aria-label="Carte de connaissances">
+        <div class="workspace-heading">
+          <div>
+            <p class="section-kicker">Explorer la carte</p>
+            <h2>Des expériences personnelles aux compétences professionnelles</h2>
+          </div>
+          <p class="hint"><span class="legend-dot"></span> Cliquez sur un nœud pour afficher son contenu</p>
+        </div>
+
+        <div class="map" id="knowledge-map">
+          <svg class="connections" aria-hidden="true" viewBox="0 0 1000 620" preserveAspectRatio="none">
+            <path d="M500 310 C390 255 280 155 180 135"></path>
+            <path d="M500 310 C380 300 260 290 150 315"></path>
+            <path d="M500 310 C390 370 280 460 180 490"></path>
+            <path d="M500 310 C620 255 730 155 830 135"></path>
+            <path d="M500 310 C630 300 750 290 860 315"></path>
+            <path d="M500 310 C620 370 730 460 830 490"></path>
+          </svg>
+
+          <button class="map-node node-center is-active" data-panel="overview">
+            <span class="node-icon">✦</span>
+            <strong>Communication<br>interculturelle</strong>
+            <small>carte de connaissances</small>
+          </button>
+
+          <button class="map-node node-religion" data-panel="religion">
+            <span class="node-icon">01</span><strong>Religion</strong><small>appartenance</small>
+          </button>
+          <button class="map-node node-ecology" data-panel="ecology">
+            <span class="node-icon">02</span><strong>Écologie</strong><small>responsabilité</small>
+          </button>
+          <button class="map-node node-diversity" data-panel="diversity">
+            <span class="node-icon">03</span><strong>Diversité</strong><small>tolérance</small>
+          </button>
+          <button class="map-node node-social" data-panel="social">
+            <span class="node-icon">04</span><strong>Milieu social</strong><small>à préciser</small>
+          </button>
+          <button class="map-node node-school" data-panel="school">
+            <span class="node-icon">05</span><strong>Institution</strong><small>cadre & discipline</small>
+          </button>
+          <button class="map-node node-course" data-panel="course">
+            <span class="node-icon">06</span><strong>Le module</strong><small>objectifs & méthodes</small>
+          </button>
+        </div>
+
+        <aside class="detail-panel" id="detail-panel" aria-live="polite">
+          <div class="panel-topline">
+            <span class="panel-tag" id="panel-tag">POINT DE DÉPART</span>
+            <button class="close-panel" type="button" aria-label="Réduire le détail">×</button>
+          </div>
+          <h3 id="panel-title">Comprendre avant de comparer</h3>
+          <div id="panel-content"></div>
+        </aside>
+      </section>
+
+      <footer>
+        <span>Communication interculturelle</span>
+        <span>PAU · CERGY · 2026–2027</span>
+      </footer>
     </main>
-    <script src="content.enc.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
