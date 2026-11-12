@@ -4,83 +4,61 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portrait culturel et fiche du module de communication interculturelle.">
-    <title>Communication interculturelle — carte de connaissances</title>
+    <title>CI — Carte de connaissances</title>
     <link rel="stylesheet" href="Css/mainStyle.css">
   </head>
   <body>
-    <main class="site-shell">
-      <header class="hero">
-        <div>
-          <p class="eyebrow">Portfolio réflexif · 2026–2027</p>
-          <h1>Communication<br><em>interculturelle</em></h1>
-          <p class="intro">Une carte pour relier mon identité culturelle aux notions et compétences du module.</p>
-        </div>
-        <div class="hero-meta" aria-label="Informations principales">
-          <span>10 points</span>
-          <span>ECTS</span>
-          <span>EDD UNESCO</span>
-        </div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <main class="app">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Retour au début"><span>CI</span><strong>Communication<br>interculturelle</strong></a>
+        <div class="topbar-meta"><span>Portfolio réflexif</span><span class="year">2026—2027</span></div>
       </header>
 
-      <section class="workspace" aria-label="Carte de connaissances">
-        <div class="workspace-heading">
-          <div>
-            <p class="section-kicker">Explorer la carte</p>
-            <h2>Des expériences personnelles aux compétences professionnelles</h2>
-          </div>
-          <p class="hint"><span class="legend-dot"></span> Cliquez sur un nœud pour afficher son contenu</p>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Carte de connaissances</p>
+          <h1>Se connaître<br><em>pour mieux</em><br>rencontrer.</h1>
+          <p class="hero-text">Une exploration interactive entre identité culturelle, héritages familiaux et compétences professionnelles.</p>
+          <a class="scroll-link" href="#explorer">Explorer la carte <span>↓</span></a>
         </div>
-
-        <div class="map" id="knowledge-map">
-          <svg class="connections" aria-hidden="true" viewBox="0 0 1000 620" preserveAspectRatio="none">
-            <path d="M500 310 C390 255 280 155 180 135"></path>
-            <path d="M500 310 C380 300 260 290 150 315"></path>
-            <path d="M500 310 C390 370 280 460 180 490"></path>
-            <path d="M500 310 C620 255 730 155 830 135"></path>
-            <path d="M500 310 C630 300 750 290 860 315"></path>
-            <path d="M500 310 C620 370 730 460 830 490"></path>
-          </svg>
-
-          <button class="map-node node-center is-active" data-panel="overview">
-            <span class="node-icon">✦</span>
-            <strong>Communication<br>interculturelle</strong>
-            <small>carte de connaissances</small>
-          </button>
-
-          <button class="map-node node-religion" data-panel="religion">
-            <span class="node-icon">01</span><strong>Religion</strong><small>appartenance</small>
-          </button>
-          <button class="map-node node-ecology" data-panel="ecology">
-            <span class="node-icon">02</span><strong>Écologie</strong><small>responsabilité</small>
-          </button>
-          <button class="map-node node-diversity" data-panel="diversity">
-            <span class="node-icon">03</span><strong>Diversité</strong><small>tolérance</small>
-          </button>
-          <button class="map-node node-social" data-panel="social">
-            <span class="node-icon">04</span><strong>Milieu social</strong><small>à préciser</small>
-          </button>
-          <button class="map-node node-school" data-panel="school">
-            <span class="node-icon">05</span><strong>Institution</strong><small>cadre & discipline</small>
-          </button>
-          <button class="map-node node-course" data-panel="course">
-            <span class="node-icon">06</span><strong>Le module</strong><small>objectifs & méthodes</small>
-          </button>
+        <div class="hero-visual" aria-label="Résumé du portfolio">
+          <div class="visual-ring ring-back"></div>
+          <div class="visual-ring ring-front"></div>
+          <div class="visual-core"><span>01</span><strong>IDENTITÉ<br>CULTURELLE</strong><small>partir de soi</small></div>
+          <span class="orbit orbit-one">valeurs</span><span class="orbit orbit-two">regards</span><span class="orbit orbit-three">rencontres</span>
         </div>
-
-        <aside class="detail-panel" id="detail-panel" aria-live="polite">
-          <div class="panel-topline">
-            <span class="panel-tag" id="panel-tag">POINT DE DÉPART</span>
-            <button class="close-panel" type="button" aria-label="Réduire le détail">×</button>
-          </div>
-          <h3 id="panel-title">Comprendre avant de comparer</h3>
-          <div id="panel-content"></div>
-        </aside>
       </section>
 
-      <footer>
-        <span>Communication interculturelle</span>
-        <span>PAU · CERGY · 2026–2027</span>
-      </footer>
+      <section class="explorer" id="explorer">
+        <div class="explorer-intro">
+          <p class="eyebrow"><span></span> Explorer</p>
+          <h2>Deux lectures,<br>une même carte.</h2>
+          <p>Choisissez un élément. Chaque carte révèle une pratique, une norme ou une compétence à relier au reste.</p>
+          <div class="legend"><i class="dot dot-coral"></i> Portrait culturel <i class="dot dot-teal"></i> Module</div>
+        </div>
+        <div class="knowledge-board">
+          <div class="board-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <button class="knowledge-node node-religion" data-panel="religion"><span>01</span><strong>Religion</strong><small>appartenance</small></button>
+          <button class="knowledge-node node-ecology" data-panel="ecology"><span>02</span><strong>Écologie</strong><small>responsabilité</small></button>
+          <button class="knowledge-node node-diversity" data-panel="diversity"><span>03</span><strong>Diversité</strong><small>tolérance</small></button>
+          <button class="knowledge-node node-social" data-panel="social"><span>04</span><strong>Milieu social</strong><small>à préciser</small></button>
+          <button class="knowledge-node node-school" data-panel="school"><span>05</span><strong>Institution</strong><small>cadre & discipline</small></button>
+          <button class="knowledge-node node-course" data-panel="course"><span>06</span><strong>Le module</strong><small>objectifs & méthodes</small></button>
+          <button class="knowledge-center" data-panel="overview"><span class="spark">✦</span><strong>COMMUNICATION<br>INTERCULTURELLE</strong><small>cliquer pour commencer</small></button>
+        </div>
+      </section>
+
+      <section class="detail-section" id="detail-section" aria-live="polite">
+        <div class="detail-index"><span id="detail-number">00</span><span class="detail-rule"></span><span id="detail-tag">POINT DE DÉPART</span></div>
+        <div class="detail-main">
+          <div><h2 id="panel-title">Comprendre avant de comparer</h2><div id="panel-content"></div></div>
+          <button class="close-panel" type="button" aria-label="Fermer le détail">×</button>
+        </div>
+      </section>
+
+      <footer><span>Communication interculturelle</span><span>10 points · 10,5 h CM · EDD UNESCO</span></footer>
     </main>
     <script src="app.js"></script>
   </body>
