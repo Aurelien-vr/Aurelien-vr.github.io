@@ -1,7 +1,7 @@
 import { createCipheriv, pbkdf2Sync, randomBytes } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 
-const [password, inputPath = "private-content.html", outputPath = "content.enc.js"] = process.argv.slice(2);
+const [password, inputPath = "private-content.html"] = process.argv.slice(2);
 
 if (!password) {
   console.error("Usage: node generate-content.mjs '<password>' [content-file]");
@@ -24,5 +24,5 @@ const output = `const encryptedContent = ${JSON.stringify({
 })};
 `;
 
-await writeFile(outputPath, output);
-console.log(`Encrypted content written to ${outputPath}`);
+await writeFile("content.enc.js", output);
+console.log("Encrypted content written to content.enc.js");
