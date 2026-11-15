@@ -52,17 +52,3 @@ $$('#values button').forEach(b=>{
   b.addEventListener('mouseenter',on);b.addEventListener('mouseleave',off);
   b.addEventListener('focus',on);b.addEventListener('blur',off);
 });
-
-// Bennett
-const B=[
- ['Déni','Je ne perçois pas la différence culturelle ; elle est ignorée ou jugée sans importance.','Ethnocentrisme'],
- ['Défense','La différence est perçue comme une menace ; on se replie sur « nous contre eux ».','Ethnocentrisme · c\'est la réaction brève et initiale des tensions familiales autour de la diversité.'],
- ['Minimisation','On reconnaît la différence mais on la réduit à « nous sommes tous pareils », en projetant ses propres normes comme universelles.','Ethnocentrisme · c\'est mon risque principal : mes évidences me semblent universelles.'],
- ['Acceptation','La différence est reconnue comme une autre façon légitime de donner du sens au monde.','Ethnorelativisme · là où je me situe aujourd\'hui, après discussion et prise de recul.'],
- ['Adaptation','Je change de point de vue et de comportement pour communiquer efficacement avec l\'autre culture.','Ethnorelativisme · étape visée pour mes futures expériences à l\'international.'],
- ['Intégration','Je navigue entre plusieurs cultures sans appartenir pleinement à une seule.','Ethnorelativisme · horizon à long terme.']
-];
-const out=$('#scaleOut'),btns=$$('#scale button');
-const show=i=>{btns.forEach((b,n)=>b.classList.toggle('on',n==i));
-  const [h,p,e]=B[i];out.innerHTML='<h4>'+h+'</h4><p>'+p+'</p><em>'+e+'</em>'};
-btns.forEach((b,i)=>b.addEventListener('click',()=>show(i)));show(3);
